@@ -52,9 +52,3 @@ This model checkpoint includes:
 - `best_model_wts`
   
 ---
-
-## 🛠️ Usage
-
-### 🔧 1. Training the model
-```bash
-python train_lego_classifier.py
