@@ -132,7 +132,7 @@ def resize_with_aspect_ratio(image, max_width, max_height):
 camera stream. Takes in the AI model to be used for image classification, the device (cpu or cuda), the 
 class names (LEGO IDs), and sample_images (a dictionary with keys being the LEGO ID and values the sample images)
 Cam_index is by default 0 for system webcam for laptops but use 1 for external webcams'''
-def live_inference_loop(model, device, class_names, sample_images, cam_index=0):
+def live_LEGO_detection(model, device, class_names, sample_images, cam_index=0):
     cam = initialize_camera(device_index=cam_index)
     print("Press 'q' to exit the live feed.")
     predicted_ID, confidence = "None", 0.0
@@ -221,4 +221,4 @@ if __name__ == '__main__':
     model = load_model(model_path, num_classes=len(class_names), device=device)
 
     # Change cam_index to 0 if using a webcam that is a part of your computer. 1 for external USB webcam, for example
-    live_inference_loop(model, device, class_names, sample_images, cam_index=1)
+    live_LEGO_detection(model, device, class_names, sample_images, cam_index=1)
