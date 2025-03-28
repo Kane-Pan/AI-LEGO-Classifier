@@ -46,7 +46,6 @@ This model checkpoint includes:
 - `model_state_dict`
 - `optimizer_state_dict`
 - `scheduler_state_dict`
-- `best_model_wts`, `best_acc`
 - `last_epoch`
 - `best_acc`
 - `best_model_wts`
